@@ -21,6 +21,7 @@ public class Rental {
 	}
 
 	public int getStatus() {
+		
 		return status;
 	}
 
