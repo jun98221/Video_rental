@@ -204,17 +204,13 @@ public class VRUI {
 		}
 	}
 
+	String [] arr = ["\nSelect a command !","\t 0. Quit","\t 1. List customers"
+	,"\t 2. List videos","\t 3. Register customer","\t 4. Register video","\t 5. Rent video",
+	"\t 6. Return video","\t 7. Show customer report","\t 8. Show customer and clear rentals"];
 	public int showCommand() {
-		System.out.println("\nSelect a command !");
-		System.out.println("\t 0. Quit");
-		System.out.println("\t 1. List customers");
-		System.out.println("\t 2. List videos");
-		System.out.println("\t 3. Register customer");
-		System.out.println("\t 4. Register video");
-		System.out.println("\t 5. Rent video");
-		System.out.println("\t 6. Return video");
-		System.out.println("\t 7. Show customer report");
-		System.out.println("\t 8. Show customer and clear rentals");
+		for(int i=0; i<arr.length;i++){
+			System.out.println(arr[i]);
+		}
 		
 		int command = scanner.nextInt() ;
 		
