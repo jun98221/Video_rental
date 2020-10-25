@@ -10,6 +10,7 @@ public class VRUI {
 	
 	private List<Video> videos = new ArrayList<Video>() ;
 	
+	String name = "Enter customer name: ";
 	public static void main(String[] args) {
 		VRUI ui = new VRUI() ;
 		
@@ -34,7 +35,7 @@ public class VRUI {
 	}
 
 	public void clearRentals() {
-		System.out.println("Enter customer name: ") ;
+		System.out.println(name) ;
 		String customerName = scanner.next() ;
 		
 		Customer foundCustomer = null ;
@@ -61,7 +62,7 @@ public class VRUI {
 	}
 
 	public void returnVideo() {
-		System.out.println("Enter customer name: ") ;
+		System.out.println(name) ;
 		String customerName = scanner.next() ;
 		
 		Customer foundCustomer = null ;
@@ -127,7 +128,7 @@ public class VRUI {
 	}
 
 	public void getCustomerReport() {
-		System.out.println("Enter customer name: ") ;
+		System.out.println(name) ;
 		String customerName = scanner.next() ;
 		
 		Customer foundCustomer = null ;
@@ -147,7 +148,7 @@ public class VRUI {
 	}
 
 	public void rentVideo() {
-		System.out.println("Enter customer name: ") ;
+		System.out.println(name) ;
 		String customerName = scanner.next() ;
 		
 		Customer foundCustomer = null ;
